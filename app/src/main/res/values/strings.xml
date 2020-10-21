@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AplicacionMedica</string>
+
+    <string name="app_index_register_text">¿Aún no tienes cuenta?</string>
+    <string name="app_index_register_link">Regístrate</string>
+    <string name="app_index_welcome">Bienvenidos</string>
+    <string name="app_index_name_app">Aplicación Médica</string>
+    <string name="app_index_ingresar">Ingresar</string>
+
+    <string name="app_login_title">Ingresa con tu cuenta</string>
+    <string name="app_login_help">¿Necesitas ayuda?</string>
+    <string name="app_login_email">Correo electrónico</string>
+    <string name="app_login_password">Contraseña</string>
+    <string name="app_back_button">BackButton</string>
+</resources>
