@@ -12,4 +12,11 @@
     <string name="app_login_email">Correo electrónico</string>
     <string name="app_login_password">Contraseña</string>
     <string name="app_back_button">BackButton</string>
+
+    <string name="app_register_title">Crea una cuenta</string>
+    <string name="app_register_name_field">Nombre</string>
+    <string name="app_register_lastname_field">Apellido</string>
+    <string name="app_register_birthdate">Fecha de nacimiento</string>
+    <string name="app_register_password_confirm">Confirmar contraseña</string>
+    <string name="app_register_btn">Registrarse</string>
 </resources>
