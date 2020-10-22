@@ -19,4 +19,12 @@
     <string name="app_register_birthdate">Fecha de nacimiento</string>
     <string name="app_register_password_confirm">Confirmar contraseña</string>
     <string name="app_register_btn">Registrarse</string>
+
+    <string name="app_pass_recover_title">Recuperación de contraseña</string>
+    <string name="app_pass_recover_success_title">Correo de recuperación enviado con éxito</string>
+    <string name="app_pass_recover_text">Ingresa tu correo eléctronico para hacerte llegar un método de recuperación de contraseña.</string>
+    <string name="app_pass_recover_success">Se ha enviado un correo electrónico a tu dirección registrada para seguir con el proceso de recuperación de contraseña.</string>
+    <string name="app_pass_recover_success_note">En caso de no recibir el correo, revisa la carpeta de SPAM.</string>
+    <string name="app_pass_recover_btn">Enviar</string>
+    <string name="app_pass_recover_btn_back">Regresar a inicio</string>
 </resources>

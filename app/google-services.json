@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "638179545207",
+    "firebase_url": "https://medical-app-c6a3a.firebaseio.com",
+    "project_id": "medical-app-c6a3a",
+    "storage_bucket": "medical-app-c6a3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638179545207:android:cf248efbce80742bb3b672",
+        "android_client_info": {
+          "package_name": "com.fime.lidm.aplicacionmedica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638179545207-r9e24vbh8lh90eh654va404j9dfcecbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5TNUJ-WqA0BGDlnLPVtuBrfTGY9rW9Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638179545207-r9e24vbh8lh90eh654va404j9dfcecbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
