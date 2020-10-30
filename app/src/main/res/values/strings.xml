@@ -27,4 +27,7 @@
     <string name="app_pass_recover_success_note">En caso de no recibir el correo, revisa la carpeta de SPAM.</string>
     <string name="app_pass_recover_btn">Enviar</string>
     <string name="app_pass_recover_btn_back">Regresar a inicio</string>
+
+    <string name="app_index_patients">Pacientes</string>
+    <string name="app_index_recipes">Recetas</string>
 </resources>
