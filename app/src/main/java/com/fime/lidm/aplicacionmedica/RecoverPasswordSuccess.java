@@ -6,6 +6,13 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Activity RecoverPassword
+ *
+ * @author Julian Tovar
+ * @since 2020-10-24
+ *
+ */
 public class RecoverPasswordSuccess extends AppCompatActivity {
 
     Button btnBackMain;
@@ -18,7 +25,7 @@ public class RecoverPasswordSuccess extends AppCompatActivity {
         btnBackMain = findViewById(R.id.btn_back_main);
 
         btnBackMain.setOnClickListener(v -> {
-            Intent intent = new Intent(RecoverPasswordSuccess.this, MainActivity.class);
+            Intent intent = new Intent(RecoverPasswordSuccess.this, Main.class);
             startActivity(intent);
         });
     }

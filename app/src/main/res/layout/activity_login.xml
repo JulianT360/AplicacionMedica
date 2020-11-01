@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.14" />
 
     <EditText
-        android:id="@+id/txt_emal"
+        android:id="@+id/txt_email"
         android:layout_width="300dp"
         android:layout_height="50sp"
         android:background="@drawable/input_field"
@@ -53,11 +53,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_emal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email"
         app:layout_constraintVertical_bias="0.071" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
