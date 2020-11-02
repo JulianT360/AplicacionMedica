@@ -1,8 +1,8 @@
 package com.fime.lidm.aplicacionmedica;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Recipes extends AppCompatActivity {
 

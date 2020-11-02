@@ -10,11 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AddPatient"></activity>
-        <activity android:name=".AddRecipe" />
-        <activity android:name=".RecipeDetails" />
+        <activity android:name=".PatientDetails" />
         <activity android:name=".Recipes" />
         <activity android:name=".Patients" />
-        <activity android:name=".Index" />
         <activity android:name=".Principal" />
         <activity android:name=".RecoverPasswordSuccess" />
         <activity android:name=".RecoverPassword" />
