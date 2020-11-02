@@ -150,7 +150,7 @@
         android:id="@+id/btn_register"
         android:layout_width="180dp"
         android:layout_height="50sp"
-        android:background="@drawable/btn_ingresar"
+        android:background="@drawable/btn_dark"
         android:text="@string/app_register_btn"
         android:textAllCaps="false"
         android:textColor="@color/white"

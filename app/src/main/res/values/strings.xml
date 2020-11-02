@@ -27,4 +27,21 @@
     <string name="app_pass_recover_success_note">En caso de no recibir el correo, revisa la carpeta de SPAM.</string>
     <string name="app_pass_recover_btn">Enviar</string>
     <string name="app_pass_recover_btn_back">Regresar a inicio</string>
+
+    <string name="app_principal_patients">Pacientes</string>
+    <string name="app_principal_recipes">Recetas</string>
+
+    <string name="app_patients_search">Buscar</string>
+    <string name="app_patients_add">Agregar Paciente</string>
+
+    <string name="app_patient_detail_recipes">Ver Recetas</string>
+    <string name="app_patient_detail_patient">Paciente</string>
+    <string name="app_patient_detail_age">Edad</string>
+    <string name="app_patient_detail_weight">Peso</string>
+    <string name="app_patient_detail_height">Altura</string>
+    <string name="app_patient_detail_genre">Sexo</string>
+    <string name="app_patient_detail_date">Fecha: </string>
+    <string name="app_patient_detail_add_action">Agregar</string>
+
+    <string name="app_add_patient_new_patient">Nuevo Paciente</string>
 </resources>

@@ -1,8 +1,5 @@
 package com.fime.lidm.aplicacionmedica;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +8,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.fime.lidm.aplicacionmedica.domain.entity.Usuario;
 import com.google.android.gms.common.util.Strings;
@@ -86,6 +86,7 @@ public class Login extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(Login.this, "Autenticacion exitosa.",
                                     Toast.LENGTH_SHORT).show();
+                            toPrincipalActivity();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -96,6 +97,10 @@ public class Login extends AppCompatActivity {
                 });
     }
 
+    private void toPrincipalActivity() {
+        Intent intent = new Intent(Login.this, Principal.class);
+        startActivity(intent);
+    }
     /**
      * Funcion para validar las credenciales del usuario.
      *
