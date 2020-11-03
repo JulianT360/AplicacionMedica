@@ -7,22 +7,24 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.fime.lidm.aplicacionmedica.domain.entity.Patient;
+
 import java.util.List;
 
 public class ListViewAdapter extends BaseAdapter {
 
     Context context;
-    List<String> nombres;
+    List<Patient> lstPatient;
     LayoutInflater inflater;
 
-    public ListViewAdapter(Context context, List<String> nombres) {
+    public ListViewAdapter(Context context, List<Patient> lstPatient) {
         this.context = context;
-        this.nombres = nombres;
+        this.lstPatient = lstPatient;
     }
 
     @Override
     public int getCount() {
-        return nombres.size();
+        return lstPatient.size();
     }
 
     @Override
@@ -42,11 +44,12 @@ public class ListViewAdapter extends BaseAdapter {
 
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
+        //Se obtiene el layout del recurso.
         View itemView = inflater.inflate(R.layout.list_item_medical_app, parent, false);
 
-        txtNombre = (TextView) itemView.findViewById(R.id.txt_name_item);
-
-        txtNombre.setText(nombres.get(position));
+        //Se actualiza el nombre del texto
+        txtNombre = itemView.findViewById(R.id.txt_name_item);
+        txtNombre.setText(lstPatient.get(position).getAllName());
 
         return itemView;
     }

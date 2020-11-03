@@ -6,9 +6,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.fime.lidm.aplicacionmedica.domain.entity.Patient;
+
 public class PatientDetails extends AppCompatActivity {
 
-    String name;
+    Patient patientActual;
     TextView header;
 
     @Override
@@ -17,11 +19,11 @@ public class PatientDetails extends AppCompatActivity {
         setContentView(R.layout.activity_patient_details);
 
         Intent intent = getIntent();
-        name = intent.getStringExtra("patient");
-        header = (TextView) findViewById(R.id.txt_name_patient);
+        patientActual = (Patient) intent.getSerializableExtra("patient");
+        header = findViewById(R.id.txt_name_patient);
 
-        header.setText(name);
-
+        // Se setea nombre en el header
+        header.setText(patientActual.getAllName());
     }
 
     @Override
