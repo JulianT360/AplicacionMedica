@@ -2,6 +2,12 @@ package com.fime.lidm.aplicacionmedica.domain.entity;
 
 import java.io.Serializable;
 
+/**
+ * Clase para pacientes.
+ *
+ * @author Julian Tovar
+ * @since 2020-11-02
+ */
 public class Patient implements Serializable {
 
     private String name;

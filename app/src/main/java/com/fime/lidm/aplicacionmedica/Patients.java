@@ -3,8 +3,6 @@ package com.fime.lidm.aplicacionmedica;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -21,6 +19,12 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase para funcionalidad de Patients.
+ *
+ * @author Julian Tovar
+ * @since 2020-11-02
+ */
 public class Patients extends AppCompatActivity {
 
     private final String TAG = "Patients";
@@ -50,7 +54,7 @@ public class Patients extends AppCompatActivity {
         if(lstPatients.isEmpty()) {
             getPatients();
         } else {
-            createListView();
+            createListViewPatients();
         }
     }
 
@@ -58,6 +62,7 @@ public class Patients extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        // Setea funcion on clic en cada elemento de la lista
         lstPatientsView.setOnItemClickListener((adapterView, view, i, l) -> {
             Intent intent = new Intent(Patients.this, PatientDetails.class);
             intent.putExtra("patient", lstPatients.get(i));
@@ -71,6 +76,10 @@ public class Patients extends AppCompatActivity {
         });
     }
 
+    /**
+     * Funcion para obtener los pacientes.
+     *
+     */
     private void getPatients() {
         mPatientListener = new ValueEventListener() {
             @Override
@@ -87,7 +96,7 @@ public class Patients extends AppCompatActivity {
                     lstPatients.add(patientItem);
                 }
 
-                createListView();
+                createListViewPatients();
             }
 
             @Override
@@ -99,7 +108,11 @@ public class Patients extends AppCompatActivity {
         mPatientReference.addValueEventListener(mPatientListener);
     }
 
-    private void createListView(){
+    /**
+     * Setea el adapter para mostrar los elementos de la lista
+     *
+     */
+    private void createListViewPatients(){
         adapter = new ListViewAdapter(this, lstPatients);
         lstPatientsView.setAdapter(adapter);
     }
