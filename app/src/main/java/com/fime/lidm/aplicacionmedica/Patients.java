@@ -52,11 +52,11 @@ public class Patients extends AppCompatActivity {
     }
 
     private void createListView(){
-        lstNames.add("Julian");
-        lstNames.add("Mary");
-        lstNames.add("Ivan");
-        lstNames.add("Mateo");
-        lstNames.add("Andrea");
+        lstNames.add("Julian Tovar");
+        lstNames.add("Mary Maldonado");
+        lstNames.add("Ivan Hernandez");
+        lstNames.add("Mateo Fernandez");
+        lstNames.add("Andrea Alvarez");
 
         adapter = new ListViewAdapter(this, lstNames);
 
